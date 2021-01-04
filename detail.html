@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sotbit detail</title>
+    <link rel="stylesheet" href="css/detail.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__top header-top">
+            <div class="header-top__mobile-menu mobile-menu">
+                <button class="mobile-menu__btn">
+                    <svg class="mobile-menu__btn-icon">
+                        <use xlink:href='/img/sprite.svg#icon_menu'/>
+                    </svg>
+                </button>
+            </div>
+            <a href="/" class="header-top__logo-wrap">
+                <img class="header-top__logo" src="img/logo.png" alt="">
+            </a>
+            <div class="header-top__city-block">
+                <svg class="header-top__city-icon" >
+                    <use xlink:href='/img/sprite.svg#icon_location'/>
+                </svg>
+                <div class="header-top__city-content-wrap">
+                    <span class="header-top__city-title">Ваш город</span>
+                    <a class="header-top__city-link" href="#">Санкт-Петербург</a>
+                </div>
+            </div>
+            <div class="header-top__search-wrap">
+                <input class="header-top__search" type="text" placeholder="Поиск">
+                <button class="header-top__search-button">
+                    <svg class="header-top__search-icon" >
+                        <use xlink:href='/img/sprite.svg#icon_search'/>
+                    </svg>
+                </button>
+            </div>
+            <div class="header-top__phone-block">
+                <svg class="header-top__phone-icon" >
+                    <use xlink:href='/img/sprite.svg#icon_phone'/>
+                </svg>
+                <div class="header-top__phone-content-wrap">
+                    <div class="header-top__phone-content">
+                        <a href="#" class="header-top__phone-number">+7 (495) 123-45-67</a>
+                        <svg class="header-top__phone-arrow">
+                            <use xlink:href='/img/sprite.svg#icon_dropdown_big'/>
+                        </svg>
+                    </div>
+                    <a class="header-top__phone-link" href="#">Заказать звонок</a>
+                </div>
+            </div>
+            <div class="header-top__account-block">
+                <div class="header-top__account-content-wrap">
+                    <a class="header-top__account-log-in" href="#">
+                        <svg class="header-top__account-icon">
+                            <use xlink:href='/img/sprite.svg#icon_login'/>
+                        </svg>
+                        <span class="header-top__account-log-in-text">Войти</span>
+                    </a>
+                    <span class="header-top__account-text">Личный кабинет</span>
+                </div>
+            </div>
+            <div class="header-top__basket-block">
+                <a class="header-top__basket-item header-top__basket-item--compare" href="#">
+                    <svg class="header-top__basket-icon header-top__basket-icon--compare" >
+                        <use xlink:href='/img/sprite.svg#icon_compare'/>
+                    </svg>
+                    <span class="header-top__basket-count">0</span>
+                </a>
+                <a class="header-top__basket-item header-top__basket-item--favorite" href="#">
+                    <svg class="header-top__basket-icon header-top__basket-icon--favorite" >
+                        <use xlink:href='/img/sprite.svg#icon_favourite'/>
+                    </svg>
+                    <span class="header-top__basket-count">0</span>
+                </a>
+                <a class="header-top__basket-item header-top__basket-item--buy" href="#">
+                    <svg class="header-top__basket-icon header-top__basket-icon--buy">
+                        <use xlink:href='/img/sprite.svg#icon_cart'/>
+                    </svg>
+                    <span class="header-top__basket-count">0</span>
+                </a>
+            </div>
+        </div>
+        <nav class="header-nav">
+            <ul class="header-nav__list">
+                <li class="header-nav__item header-nav__item--catalog">
+                    <a class="header-nav__item-link" href="#">
+                        <svg class="header-nav__item-icon-burger">
+                            <use xlink:href='/img/sprite.svg#icon_menu'/>
+                        </svg>
+                        Каталог
+                        <svg class="header-nav__item-icon-arrow">
+                            <use xlink:href='/img/sprite.svg#icon_dropdown_big'/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="header-nav__item">
+                    <a class="header-nav__item-link" href="#">Акции</a>
+                </li>
+                <li class="header-nav__item">
+                    <a class="header-nav__item-link" href="#">Бренды</a>
+                </li>
+                <li class="header-nav__item">
+                    <a class="header-nav__item-link" href="#">Оплата</a>
+                </li>
+                <li class="header-nav__item">
+                    <a class="header-nav__item-link" href="#">Доставка</a>
+                </li>
+                <li class="header-nav__item">
+                    <a class="header-nav__item-link" href="#">Покупателям</a>
+                </li>
+                <li class="header-nav__item">
+                    <a class="header-nav__item-link" href="#">
+                        О компании
+                        <svg class="header-nav__item-icon-arrow">
+                            <use xlink:href='/img/sprite.svg#icon_dropdown_big'/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="header-nav__item">
+                    <a class="header-nav__item-link" href="#">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs__item">
+                <a href="#" class="breadcrumbs__link">
+                    Главная
+                    <svg class="breadcrumbs__link-arrow">
+                        <use xlink:href='/img/sprite.svg#icon_arrow_breadcrumbs'/>
+                    </svg>
+                </a>
+            </li>
+            <li class="breadcrumbs__item">
+                <a href="#" class="breadcrumbs__link">
+                    Каталог
+                    <svg class="breadcrumbs__link-arrow">
+                        <use xlink:href='/img/sprite.svg#icon_arrow_breadcrumbs'/>
+                    </svg>
+                </a>
+            </li>
+            <li class="breadcrumbs__item">
+                <a href="#" class="breadcrumbs__link">
+                    Электроника
+                    <svg class="breadcrumbs__link-arrow">
+                        <use xlink:href='/img/sprite.svg#icon_arrow_breadcrumbs'/>
+                    </svg>
+                </a>
+            </li>
+            <li class="breadcrumbs__item">
+                <a href="#" class="breadcrumbs__link">
+                    Телефоны
+                    <svg class="breadcrumbs__link-arrow">
+                        <use xlink:href='/img/sprite.svg#icon_arrow_breadcrumbs'/>
+                    </svg>
+                </a>
+            </li>
+            <li class="breadcrumbs__item">
+                <a href="#" class="breadcrumbs__link">
+                    Мобильные телефоны
+                    <svg class="breadcrumbs__link-arrow">
+                        <use xlink:href='/img/sprite.svg#icon_arrow_breadcrumbs'/>
+                    </svg>
+                </a>
+            </li>
+            <li class="breadcrumbs__item">
+                <span class="breadcrumbs__last-item">Смартфон Apple iPhone Xs 64GB</span>
+            </li>
+        </ul>
+        <section class="product-detail-wrap">
+            <div class="product-detail">
+                <div class="product-detail__slider-wrap">
+                    <div class="product-detail__slider slider-product-detail">
+                        <div class="slider-product-detail__item">
+                            <img src="img/detail/detail_prod_1.jpg" class="slider-product-detail__img" alt="">
+                        </div>
+                        <div class="slider-product-detail__tags-wrap">
+                            <span class="slider-product-detail__tag slider-product-detail__tag--action">
+                                Акция
+                            </span>
+                            <span class="slider-product-detail__tag slider-product-detail__tag--hit">
+                                Хит
+                            </span>
+                            <span class="slider-product-detail__tag slider-product-detail__tag--new">
+                                Новинка
+                            </span>
+                        </div>
+                        <div class="slider-product-detail__icons-block">
+                            <a href="#" class="slider-product-detail__icon-wrap">
+                                <svg class="slider-product-detail__icon">
+                                    <use xlink:href='/img/sprite.svg#icon_favourite'/>
+                                </svg>
+                            </a>
+                            <a href="#" class="slider-product-detail__icon-wrap">
+                                <svg class="slider-product-detail__icon">
+                                    <use xlink:href='/img/sprite.svg#icon_compare'/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-detail__slider-nav slider-nav-product-detail">
+                        <div class="slider-nav-product-detail__item active">
+                            <img src="img/detail/detail_prod_2.jpg" class="slider-nav-product-detail__img" alt="">
+                        </div>
+                        <div class="slider-nav-product-detail__item">
+                            <img src="img/detail/detail_prod_3.jpg" class="slider-nav-product-detail__img" alt="">
+                        </div>
+                        <div class="slider-nav-product-detail__item">
+                            <img src="img/detail/detail_prod_4.jpg" class="slider-nav-product-detail__img" alt="">
+                        </div>
+                        <div class="slider-nav-product-detail__item">
+                            <img src="img/detail/detail_prod_5.jpg" class="slider-nav-product-detail__img" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="product-detail__info-product-wrap product-detail-info">
+                    <div class="product-detail-info__headline">
+                        <h1 class="product-detail-info__title">Смартфон Apple iPhone Xs 64GB</h1>
+                        <div class="product-detail-info__logo-wrap">
+                            <img src="img/detail/brand.jpg" class="product-detail-info__logo" alt="">
+                        </div>
+                    </div>
+                    <div class="product-detail__info-row">
+                        <div class="product-detail__status">
+                            <span class="product-detail__status-title">Наличие:</span>
+                            <svg class="product-detail__status-icon">
+                                <use xlink:href='/img/sprite.svg#icon_check'/>
+                            </svg>
+                            <span class="product-detail__status-quantity">999шт</span>
+                        </div>
+                        <div class="product-detail__articul">
+                            <span class="product-detail__articul-title">Артикул:</span>
+                            <span class="product-detail__articul-name">DCD780C2</span>
+                        </div>
+                        <div class="product-detail__rating">
+                            <span class="product-detail__rating-title">Рейтинг:</span>
+                            <div class="product-detail__rating-star rating-star">
+                                <input class="rating-star-input" id="star-rating-5_ID1" type="radio"
+                                    name="star-rating_ID1" value="5">
+                                <label class="rating-star-label" for="star-rating-5_ID1">
+                                    <svg class="rating-star-icon">
+                                        <use xlink:href='/img/sprite.svg#icon_star'/>
+                                    </svg>
+                                </label>
+                                <input class="rating-star-input" id="star-rating-4_ID1" type="radio"
+                                    name="star-rating_ID1" value="4">
+                                <label class="rating-star-label" for="star-rating-4_ID1">
+                                    <svg class="rating-star-icon">
+                                        <use xlink:href='/img/sprite.svg#icon_star'/>
+                                    </svg>
+                                </label>
+                                <input class="rating-star-input" id="star-rating-3_ID1" type="radio"
+                                    name="star-rating_ID1" value="3">
+                                <label class="rating-star-label" for="star-rating-3_ID1">
+                                    <svg class="rating-star-icon">
+                                        <use xlink:href='/img/sprite.svg#icon_star'/>
+                                    </svg>
+                                </label>
+                                <input class="rating-star-input" id="star-rating-2_ID1" type="radio"
+                                    name="star-rating_ID1" value="2">
+                                <label class="rating-star-label" for="star-rating-2_ID1">
+                                    <svg class="rating-star-icon">
+                                        <use xlink:href='/img/sprite.svg#icon_star'/>
+                                    </svg>
+                                </label>
+                                <input class="rating-star-input" id="star-rating-1_ID1" type="radio"
+                                    name="star-rating_ID1" value="1">
+                                <label class="rating-star-label" for="star-rating-1_ID1">
+                                    <svg class="rating-star-icon">
+                                        <use xlink:href='/img/sprite.svg#icon_star'/>
+                                    </svg>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-detail__price-row">
+                        <div class="product-detail__price-block price-block-product-detail">
+                            <span class="price-block-product-detail__title">Цена</span>
+                            <div class="price-block-product-detail__price-wrap">
+                                <span class="price-block-product-detail__price">68 100 руб.</span>
+                                <span class="price-block-product-detail__old-price">69000 руб.</span>
+                            </div>
+                            <div class="price-block-product-detail__save-price-wrap">
+                                <span class="price-block-product-detail__save-price-title">Экономия</span>
+                                <span class="price-block-product-detail__save-price">10000 руб.</span>
+                            </div>
+                            <a href="#" class="price-block-product-detail__link">
+                                <svg class="price-block-product-detail__link-icon">
+                                    <use xlink:href='/img/sprite.svg#icon_cheaper'/>
+                                </svg>
+                                Нашли дешевле?
+                            </a>
+                        </div>
+                        <div class="product-detail__property-block">
+                            <span class="product-detail__property-title">Характеристики</span>
+                            <ul class="product-detail__property-list">
+                                <li class="product-detail__property-item">
+                                    <span class="product-detail__property-item-title">Артикул:</span>
+                                    <span class="product-detail__property-item-text">DCD780C2</span>
+                                </li>
+                                <li class="product-detail__property-item">
+                                    <span class="product-detail__property-item-title">Производитель:</span>
+                                    <span class="product-detail__property-item-text">Apple</span>
+                                </li>
+                            </ul>
+                            <a href="#" class="product-detail__property-link">
+                                Другие характеристики
+                                <svg class="product-detail__property-link-icon">
+                                    <use xlink:href='/img/sprite.svg#icon_dropdown_small'/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <form action="#" class="product-detail__form">
+                        <div class="product-detail__offers-block">
+                            <span class="product-detail__offers-title">Выберите цвет:</span>
+                            <div class="product-detail__offers-wrap">
+                                <label class="product-detail__offers-item-label active">
+                                    <img src="img/detail/color_1.jpg" class="product-detail__offers-item-img" alt="">
+                                    <input type="radio" class="product-detail__offers-color"
+                                        name="product-detail__offers-color">
+                                </label>
+                                <label class="product-detail__offers-item-label">
+                                    <img src="img/detail/color_2.jpg" class="product-detail__offers-item-img" alt="">
+                                    <input type="radio" class="product-detail__offers-color"
+                                        name="product-detail__offers-color">
+                                </label>
+                                <label class="product-detail__offers-item-label">
+                                    <img src="img/detail/color_3.jpg" class="product-detail__offers-item-img" alt="">
+                                    <input type="radio" class="product-detail__offers-color"
+                                        name="product-detail__offers-color">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="product-detail__buy-block product-detail-buy">
+                            <div class="product-detail-buy__inner">
+                                <div class="product-detail-buy__btn-wrap">
+                                    <div class="product-detail-buy__quantity-wrap">
+                                        <button
+                                            class="product-detail-buy__quantity-btn product-detail-buy__quantity-btn--minus">
+                                            <svg class="product-detail-buy__quantity-btn-icon product-detail-buy__quantity-btn-icon--minus" >
+                                                <use xlink:href='/img/sprite.svg#icon_minus'/>
+                                            </svg>
+                                        </button>
+                                        <input class="product-detail-buy__quantity-input" name="quantity-product"
+                                            type="text" value="1">
+                                        <button
+                                            class="product-detail-buy__quantity-btn product-detail-buy__quantity-btn--plus">
+                                            <svg class="product-detail-buy__quantity-btn-icon product-detail-buy__quantity-btn-icon--plus">
+                                                <use xlink:href='/img/sprite.svg#icon_plus'/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <button class="product-detail-buy__btn-add-to-basket" type="submit">В
+                                        корзину</button>
+                                    <a href="#" class="product-detail-buy__btn-one-click">Купить в 1 клик</a>
+                                </div>
+                                <a href="#" class="product-detail-buy__link-gift">
+                                    <svg class="product-detail-buy__link-gift-icon">
+                                        <use xlink:href='/img/sprite.svg#icon_gift'/>
+                                    </svg>
+                                    Хочу в подарок
+                                </a>
+                            </div>
+                            <div class="product-detail__delivery-info-block">
+                                <div class="product-detail__delivery-info-item">
+                                    <span class="product-detail__delivery-info-title">Доставка курьером</span>
+                                    <span class="product-detail__delivery-info-text">
+                                        через 3 дня, 18 июля —
+                                        <span class="product-detail__delivery-info-text--bold">270 руб.</span>
+                                    </span>
+                                </div>
+                                <div class="product-detail__delivery-info-item">
+                                    <span class="product-detail__delivery-info-title">Самовывоз</span>
+                                    <span class="product-detail__delivery-info-text">
+                                        завтра, 16 июля —
+                                        <span class="product-detail__delivery-info-text--bold">99 руб.</span>
+                                    </span>
+                                </div>
+                                <div class="product-detail__delivery-info-links-block">
+                                    <div class="product-detail__delivery-info-link-wrap">
+                                        <a href="#" class="product-detail__delivery-info-link">
+                                            Другие способы доставки
+                                            <svg class="product-detail__delivery-info-link-icon">
+                                                <use xlink:href='/img/sprite.svg#icon_dropdown_small'/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="product-detail__delivery-info-link-wrap">
+                                        <a href="#" class="product-detail__delivery-info-link">
+                                            Условия доставки
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="product-detail__share-block">
+                        <a href="#" class="product-detail__share-link">
+                            Поделиться
+                            <svg class="product-detail__share-link-icon">
+                                <use xlink:href='/img/sprite.svg#icon_share_small'/>
+                            </svg>
+                        </a>
+                        <span class="product-detail__share-text">
+                            Поделитесь товаром со своими друзьями и знакомыми!
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <article class="advantages">
+                <h2 class="advantages__title">Приемущества магазина</h2>
+                <div class="advantages__item">
+                    <div class="advantages__item-img-wrap">
+                        <img src="img/adv_1.png" class="advantages-item-img" alt="Бесплатная доставка">
+                    </div>
+                    <span class="advantages__item-text">Бесплатная доставка</span>
+                </div>
+                <div class="advantages__item">
+                    <div class="advantages__item-img-wrap">
+                        <img src="img/adv_2.png" class="advantages-item-img" alt="Оплата картами">
+                    </div>
+                    <span class="advantages__item-text">Оплата картами</span>
+                </div>
+                <div class="advantages__item">
+                    <div class="advantages__item-img-wrap">
+                        <img src="img/adv_3.png" class="advantages-item-img" alt="Работа в регионе">
+                    </div>
+                    <span class="advantages__item-text">Работа в любом регионе</span>
+                </div>
+                <div class="advantages__item">
+                    <div class="advantages__item-img-wrap">
+                        <img src="img/adv_4.png" class="advantages-item-img" alt="Самые низкие цены">
+                    </div>
+                    <span class="advantages__item-text">Самые низкие цены</span>
+                </div>
+            </article>
+        </section>
+        <section class="prices-list">
+            <h2 class="prices-list__title">Цены на товар</h2>
+            <ul class="prices-list__head">
+                <li class="prices-list__head-item prices-list__head-item--name">
+                    <span class="prices-list__head-item-name-text">
+                        Название
+                    </span>
+                </li>
+                <li class="prices-list__head-item prices-list__head-item--color">
+                    <span class="prices-list__head-item-color-text">
+                        Цвет
+                    </span>
+                </li>
+                <li class="prices-list__head-item prices-list__head-item--price">
+                    <span class="prices-list__head-item-price-text">
+                        Цена
+                    </span>
+                </li>
+            </ul>
+            <div class="prices-list__item">
+                <div class="prices-list__item-inner">
+                    <div class="prices-list__item-name">
+                        <div class="prices-list__item-arrow">
+                            <svg class="prices-list__item-arrow-icon">
+                                <use xlink:href='/img/sprite.svg#icon_modifications'/>
+                            </svg>
+                        </div>
+                        <div class="prices-list__item-img-wrap">
+                            <img src="img/detail/detail_prod_2.jpg" class="prices-list__item-img" alt="">
+                        </div>
+                        <div class="prices-list__item-name-content">
+                            <h6 class="prices-list__item-name-title">Смартфон Apple iPhone Xs 64GB золотой</h6>
+                            <span class="prices-list__item-name-status">
+                                <svg class="prices-list__item-name-status-icon">
+                                    <use xlink:href='/img/sprite.svg#icon_check'/>
+                                </svg>
+                                999шт
+                            </span>
+                            <div class="prices-list__item-name-articul">
+                                <span class="prices-list__item-name-articul-title">Артикул:</span>
+                                <span class="prices-list__item-name-articul-text">DCD780C2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prices-list__item-property-wrap">
+                        <button class="prices-list__item-property-open-btn">
+                            <span class="prices-list__item-property-open-btn-text">
+                                Характеристики
+                            </span>
+                            <svg class="prices-list__item-property-open-btn-icon">
+                                <use xlink:href='/img/sprite.svg#icon_dropdown_small'/>
+                            </svg>
+                        </button>
+                        <div class="prices-list__item-property">
+                            <div class="prices-list__item-property-block prices-list__item-property-block--color">
+                                <span class="prices-list__item-property-title">Цвет:</span>
+                                <span class="prices-list__item-property-text">
+                                    Золотой
+                                </span>
+                            </div>
+                            <div class="prices-list__item-property-block">
+                                <span class="prices-list__item-property-title">Размер:</span>
+                                <span class="prices-list__item-property-text">
+                                    XXL
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prices-list__item-price">
+                        <span class="prices-list__item-price-title">Розничная цена</span>
+                        <span class="prices-list__item-price-text">68 100 руб.</span>
+                    </div>
+                    <div class="prices-list__item-btn-block">
+                        <div class="prices-list__buy-block">
+                            <div class="prices-list__icons-block">
+                                <a class="prices-list__icon-wrap" href="#">
+                                    <svg class="prices-list__icon prices-list__icon--favorite">
+                                        <use xlink:href='/img/sprite.svg#icon_favourite'/>
+                                    </svg>
+                                </a>
+                                <a class="prices-list__icon-wrap" href="#">
+                                    <svg class="prices-list__icon prices-list__icon--compare">
+                                        <use xlink:href='/img/sprite.svg#icon_compare'/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <form class="prices-list__buy-form" action="#">
+                                <div class="prices-list__quantity-wrap">
+                                    <button class="prices-list__quantity-btn prices-list__quantity-btn--minus">
+                                        <svg class="product-detail-buy__quantity-btn-icon product-detail-buy__quantity-btn-icon--minus">
+                                            <use xlink:href='/img/sprite.svg#icon_minus'/>
+                                        </svg>
+                                    </button>
+                                    <input class="prices-list__quantity-input" name="quantity-product" type="text"
+                                        value="1">
+                                    <button class="prices-list__quantity-btn prices-list__quantity-btn--plus">
+                                        <svg class="product-detail-buy__quantity-btn-icon product-detail-buy__quantity-btn-icon--plus">
+                                           <use xlink:href='/img/sprite.svg#icon_minus'/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <button class="prices-list__btn-add-to-basket" type="submit">В корзину</button>
+                            </form>
+                            <a href="#" class="prices-list__btn-one-click">Купить в 1 клик</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="prices-list__item">
+                <div class="prices-list__item-inner">
+                    <div class="prices-list__item-name">
+                        <div class="prices-list__item-arrow active">
+                            <svg class="prices-list__item-arrow-icon">
+                                <use xlink:href='/img/sprite.svg#icon_modifications'/>
+                            </svg>
+                        </div>
+                        <div class="prices-list__item-img-wrap">
+                            <img src="img/detail/detail_prod_2.jpg" class="prices-list__item-img" alt="">
+                        </div>
+                        <div class="prices-list__item-name-content">
+                            <h6 class="prices-list__item-name-title">Смартфон Apple iPhone Xs 64GB золотой</h6>
+                            <span class="prices-list__item-name-status">
+                                <svg class="prices-list__item-name-status-icon">
+                                    <use xlink:href='/img/sprite.svg#icon_check'/>
+                                </svg>
+                                999шт
+                            </span>
+                            <div class="prices-list__item-name-articul">
+                                <span class="prices-list__item-name-articul-title">Артикул:</span>
+                                <span class="prices-list__item-name-articul-text">DCD780C2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prices-list__item-property-wrap">
+                        <button class="prices-list__item-property-open-btn">
+                            <span class="prices-list__item-property-open-btn-text">
+                                Характеристики
+                            </span>
+                            <svg class="prices-list__item-property-open-btn-icon">
+                                <use xlink:href='/img/sprite.svg#icon_dropdown_small'/>
+                            </svg>
+                        </button>
+                        <div class="prices-list__item-property">
+                            <div class="prices-list__item-property-block prices-list__item-property-block--color">
+                                <span class="prices-list__item-property-title">Цвет:</span>
+                                <span class="prices-list__item-property-text">
+                                    Золотой
+                                </span>
+                            </div>
+                            <div class="prices-list__item-property-block">
+                                <span class="prices-list__item-property-title">Размер:</span>
+                                <span class="prices-list__item-property-text">
+                                    XXL
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prices-list__item-price">
+                        <span class="prices-list__item-price-title">Розничная цена</span>
+                        <span class="prices-list__item-price-text">68 100 руб.</span>
+                    </div>
+                    <div class="prices-list__item-btn-block">
+                        <div class="prices-list__buy-block">
+                            <div class="prices-list__icons-block">
+                                <a class="prices-list__icon-wrap" href="#">
+                                    <svg class="prices-list__icon prices-list__icon--favorite">
+                                        <use xlink:href='/img/sprite.svg#icon_favourite'/>
+                                    </svg>
+                                </a>
+                                <a class="prices-list__icon-wrap" href="#">
+                                    <svg class="prices-list__icon prices-list__icon--compare">
+                                        <use xlink:href='/img/sprite.svg#icon_compare'/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <form class="prices-list__buy-form" action="#">
+                                <div class="prices-list__quantity-wrap">
+                                    <button class="prices-list__quantity-btn prices-list__quantity-btn--minus">
+                                        <svg class="product-detail-buy__quantity-btn-icon product-detail-buy__quantity-btn-icon--minus">
+                                            <use xlink:href='/img/sprite.svg#icon_minus'/>
+                                        </svg>
+                                    </button>
+                                    <input class="prices-list__quantity-input" name="quantity-product" type="text"
+                                        value="1">
+                                    <button class="prices-list__quantity-btn prices-list__quantity-btn--plus">
+                                        <svg class="product-detail-buy__quantity-btn-icon product-detail-buy__quantity-btn-icon--plus">
+                                            <use xlink:href='/img/sprite.svg#icon_plus'/>
+                                         </svg>
+                                    </button>
+                                </div>
+                                <button class="prices-list__btn-add-to-basket" type="submit">В корзину</button>
+                            </form>
+                            <a href="#" class="prices-list__btn-one-click">Купить в 1 клик</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="prices-list__sub-items-wrap">
+                    <ul class="prices-list__sub-items-list">
+                        <li class="prices-list__sub-item sub-item-prices-list">
+                            <div class="sub-item-prices-list__img-wrap">
+                                <img class="sub-item-prices-list__img" src="img/detail/address_img.jpg" alt="">
+                            </div>
+                            <div class="sub-item-prices-list__title-wrap">
+                                <span class="sub-item-prices-list__title">
+                                    <svg class="sub-item-prices-list__title-icon">
+                                        <use xlink:href='/img/sprite.svg#icon_location_filled'/>
+                                    </svg>
+                                    Склад
+                                </span>
+                                <span class="sub-item-prices-list__status">
+                                    <svg class="prices-list__item-name-status-icon">
+                                        <use xlink:href='/img/sprite.svg#icon_check'/>
+                                    </svg>
+                                    999шт
+                                </span>
+                            </div>
+                            <div class="sub-item-prices-list__work-time-wrap">
+                                <span class="sub-item-prices-list__work-time">Пн-Пт: 9.00 - 20.00</span>
+                                <span class="sub-item-prices-list__work-time">Пн-Пт: 9.00 - 20.00</span>
+                            </div>
+                            <div class="sub-item-prices-list__underground">
+                                <div class="sub-item-prices-list__underground-logo">
+                                    <svg class="sub-item-prices-list__underground-svg">
+                                        <use xlink:href='/img/sprite.svg#icon_metro'/>
+                                    </svg>
+                                </div>
+                                <span class="sub-item-prices-list__underground-name"> ст. Щукинская</span>
+                            </div>
+                            <div class="sub-item-prices-list__address">
+                                <span class="sub-item-prices-list__address-text">
+                                    пр. Московский, д. 51
+                                </span>
+                            </div>
+                            <div class="sub-item-prices-list__email-block">
+                                <a href="mailto:origami@mail.ru" class="sub-item-prices-list__email">
+                                    origami@mail.ru
+                                </a>
+                            </div>
+                            <div class="sub-item-prices-list__phone-block">
+                                <a href="#" class="sub-item-prices-list__phone">+74951111111</a>
+                                <a href="#" class="sub-item-prices-list__phone">+7495222222</a>
+                            </div>
+                        </li>
+                        <li class="prices-list__sub-item sub-item-prices-list">
+                            <div class="sub-item-prices-list__img-wrap">
+                                <img class="sub-item-prices-list__img" src="img/detail/address_img.jpg" alt="">
+                            </div>
+                            <div class="sub-item-prices-list__title-wrap">
+                                <span class="sub-item-prices-list__title">
+                                    <svg class="sub-item-prices-list__title-icon">
+                                        <use xlink:href='/img/sprite.svg#icon_location_filled'/>
+                                    </svg>
+                                    Склад
+                                </span>
+                                <span class="sub-item-prices-list__status">
+                                    <svg class="prices-list__item-name-status-icon">
+                                        <use xlink:href='/img/sprite.svg#icon_check'/>
+                                    </svg>
+                                    999шт
+                                </span>
+                            </div>
+                            <div class="sub-item-prices-list__work-time-wrap">
+                                <span class="sub-item-prices-list__work-time">Пн-Пт: 9.00 - 20.00</span>
+                                <span class="sub-item-prices-list__work-time">Пн-Пт: 9.00 - 20.00</span>
+                            </div>
+                            <div class="sub-item-prices-list__underground">
+                                <div class="sub-item-prices-list__underground-logo">
+                                    <svg class="sub-item-prices-list__underground-svg">
+                                        <use xlink:href='/img/sprite.svg#icon_metro'/>
+                                    </svg>
+                                </div>
+                                <span class="sub-item-prices-list__underground-name"> ст. Щукинская</span>
+                            </div>
+                            <div class="sub-item-prices-list__address">
+                                <span class="sub-item-prices-list__address-text">
+                                    пр. Московский, д. 51
+                                </span>
+                            </div>
+                            <div class="sub-item-prices-list__email-block">
+                                <a href="mailto:origami@mail.ru" class="sub-item-prices-list__email">
+                                    origami@mail.ru
+                                </a>
+                            </div>
+                            <div class="sub-item-prices-list__phone-block">
+                                <a href="#" class="sub-item-prices-list__phone">+74951111111</a>
+                                <a href="#" class="sub-item-prices-list__phone">+7495222222</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="prices-list__item">
+                <div class="prices-list__item-inner">
+                    <div class="prices-list__item-name">
+                        <div class="prices-list__item-arrow">
+                            <svg class="prices-list__item-arrow-icon">
+                                <use xlink:href='/img/sprite.svg#icon_modifications'/>
+                            </svg>
+                        </div>
+                        <div class="prices-list__item-img-wrap">
+                            <img src="img/detail/detail_prod_2.jpg" class="prices-list__item-img" alt="">
+                        </div>
+                        <div class="prices-list__item-name-content">
+                            <h6 class="prices-list__item-name-title">Смартфон Apple iPhone Xs 64GB золотой</h6>
+                            <span class="prices-list__item-name-status">
+                                <svg class="prices-list__item-name-status-icon">
+                                    <use xlink:href='/img/sprite.svg#icon_check'/>
+                                </svg>
+                                999шт
+                            </span>
+                            <div class="prices-list__item-name-articul">
+                                <span class="prices-list__item-name-articul-title">Артикул:</span>
+                                <span class="prices-list__item-name-articul-text">DCD780C2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prices-list__item-property-wrap">
+                        <button class="prices-list__item-property-open-btn">
+                            <span class="prices-list__item-property-open-btn-text">
+                                Характеристики
+                            </span>
+                            <svg class="prices-list__item-property-open-btn-icon">
+                                <use xlink:href='/img/sprite.svg#icon_dropdown_small'/>
+                            </svg>
+                        </button>
+                        <div class="prices-list__item-property">
+                            <div class="prices-list__item-property-block prices-list__item-property-block--color">
+                                <span class="prices-list__item-property-title">Цвет:</span>
+                                <span class="prices-list__item-property-text">
+                                    Золотой
+                                </span>
+                            </div>
+                            <div class="prices-list__item-property-block">
+                                <span class="prices-list__item-property-title">Размер:</span>
+                                <span class="prices-list__item-property-text">
+                                    XXL
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prices-list__item-price">
+                        <span class="prices-list__item-price-title">Розничная цена</span>
+                        <span class="prices-list__item-price-text">68 100 руб.</span>
+                    </div>
+                    <div class="prices-list__item-btn-block">
+                        <div class="prices-list__buy-block">
+                            <div class="prices-list__icons-block">
+                                <a class="prices-list__icon-wrap" href="#">
+                                    <svg class="prices-list__icon prices-list__icon--favorite">
+                                        <use xlink:href='/img/sprite.svg#icon_favourite'/>
+                                    </svg>
+                                </a>
+                                <a class="prices-list__icon-wrap" href="#">
+                                    <svg class="prices-list__icon prices-list__icon--compare">
+                                        <use xlink:href='/img/sprite.svg#icon_compare'/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <form class="prices-list__buy-form" action="#">
+                                <div class="prices-list__quantity-wrap">
+                                    <button class="prices-list__quantity-btn prices-list__quantity-btn--minus">
+                                        <svg class="product-detail-buy__quantity-btn-icon product-detail-buy__quantity-btn-icon--minus">
+                                            <use xlink:href='/img/sprite.svg#icon_minus'/>
+                                        </svg>
+                                    </button>
+                                    <input class="prices-list__quantity-input" name="quantity-product" type="text"
+                                        value="1">
+                                    <button class="prices-list__quantity-btn prices-list__quantity-btn--plus">
+                                        <svg class="product-detail-buy__quantity-btn-icon product-detail-buy__quantity-btn-icon--plus">
+                                           <use xlink:href='/img/sprite.svg#icon_plus'/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <button class="prices-list__btn-add-to-basket" type="submit">В корзину</button>
+                            </form>
+                            <a href="#" class="prices-list__btn-one-click">Купить в 1 клик</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <article class="delivery">
+            <div class="delivery__headline">
+                <h2 class="delivery__title">Доставка</h2>
+                <span class="delivery__region">
+                    Регион
+                    <svg class="delivery__region-icon">
+                        <use xlink:href='/img/sprite.svg#icon_edit_medium'/>
+                    </svg>
+                </span>
+                <p class="delivery__address">Санкт-Петербург, Северо-Запад, Россия</p>
+            </div>
+            <div class="delivery__info">
+                <h3 class="delivery__info-title">Форма доставки</h3>
+                <div class="delivery__info-inner">
+                    <div class="delivery__variants-wrap">
+                        <div class="delivery__variants-item">
+                            <div class="delivery__variants-top">
+                                <div class="delivery__variants-img-wrap">
+                                    <img class="delivery__variants-img" src="img/detail/mail_rus.jpg" alt="">
+                                </div>
+                                <div class="delivery__variants-name-block">
+                                    <span class="delivery__variants-name">Почта России (EMS)</span>
+                                    <span class="delivery__variants-deadline"><span class="delivery__variants-deadline-title">Срок:</span> до 2 дней</span>
+                                </div>
+                                <div class="delivery__variants-price-block">
+                                    <span class="delivery__variants-price">380 руб.</span>
+                                </div>
+                            </div>
+                            <div class="delivery__variants-description-block">
+                               <p class="delivery__variants-description">
+                                    Почтовая служба «EMS Почта России» оказывает услуги по экспресс-доставке посылок в Российской Федерации
+                                    и почти в 200 странах мира. Среди плюсов «ЕМС» можно выделить высокое качество транспортировки
+                                    почтовых отправлений и относительно короткие сроки доставки посылок.
+                               </p> 
+                            </div>
+                        </div>
+                        <div class="delivery__variants-item">
+                            <div class="delivery__variants-top">
+                                <div class="delivery__variants-img-wrap">
+                                    <img class="delivery__variants-img" src="img/detail/courier.jpg" alt="">
+                                </div>
+                                <div class="delivery__variants-name-block">
+                                    <span class="delivery__variants-name">Доставка курьером</span>
+                                    <span class="delivery__variants-deadline"><span class="delivery__variants-deadline-title">Срок:</span> до 4 дней</span>
+                                </div>
+                                <div class="delivery__variants-price-block">
+                                    <span class="delivery__variants-price">270 руб.</span>
+                                </div>
+                            </div>
+                            <div class="delivery__variants-description-block">
+                               <p class="delivery__variants-description">
+                                    Доставка осуществляется в течение дня в удобное для вас время.
+                               </p> 
+                            </div>
+                        </div>
+                        <div class="delivery__variants-item">
+                            <div class="delivery__variants-top">
+                                <div class="delivery__variants-img-wrap">
+                                    <img class="delivery__variants-img" src="img/detail/self_delivery.jpg" alt="">
+                                </div>
+                                <div class="delivery__variants-name-block">
+                                    <span class="delivery__variants-name">Самовывоз</span>
+                                    <span class="delivery__variants-deadline"><span class="delivery__variants-deadline-title">Срок:</span> до 2 дней</span>
+                                </div>
+                                <div class="delivery__variants-price-block">
+                                    <span class="delivery__variants-price">0 руб.</span>
+                                </div>
+                            </div>
+                            <div class="delivery__variants-description-block">
+                               <p class="delivery__variants-description">
+                                    Доставка осуществляется в течение дня в удобное для вас время.
+                               </p> 
+                            </div>
+                        </div>
+                        <a href="#" class="delivery__variants-show-more">
+                            Показать все
+                            <svg class="delivery__variants-show-more-icon">
+                                <use xlink:href='/img/sprite.svg#icon_dropdown_small'/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="delivery__package">
+                        <p class="delivery__package-title">
+                            <svg class="delivery__package-title-icon" viewBox="0 0 24 26">
+                                <use xlink:href='/img/sprite.svg#icon_package'/>
+                            </svg>
+                            Упаковка:
+                        </p>
+                        <ul class="delivery__package-info-list">
+                            <li class="delivery__package-info-item">
+                                <span class="delivery__package-info-item-text"><span class="delivery__package-info-item-text--grey">Единица измерения:</span> шт.</span>
+                            </li> 
+                            <li class="delivery__package-info-item">
+                                <span class="delivery__package-info-item-text"><span class="delivery__package-info-item-text--grey">Размер посылки:</span> 16 см х 9см х 5 см</span>
+                            </li> 
+                            <li class="delivery__package-info-item">
+                                <span class="delivery__package-info-item-text"><span class="delivery__package-info-item-text--grey">Вес посылки:</span>0.493 кг</span>
+                            </li> 
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="delivery__pay">
+                <h3 class="delivery__pay-title">Способы оплаты</h3>
+                <div class="delivery__pay-content">
+                    <div class="delivery__pay-item">
+                        <img class="delivery__pay-item-img" src="img/detail/pay_1.jpg" alt="">
+                    </div>
+                    <div class="delivery__pay-item">
+                        <img class="delivery__pay-item-img" src="img/detail/pay_2.jpg" alt="">
+                    </div>
+                    <div class="delivery__pay-item">
+                        <img class="delivery__pay-item-img" src="img/detail/pay_3.jpg" alt="">
+                    </div>
+                    <div class="delivery__pay-item">
+                        <img class="delivery__pay-item-img" src="img/detail/pay_4.jpg" alt="">
+                    </div>
+                    <div class="delivery__pay-item">
+                        <img class="delivery__pay-item-img" src="img/detail/pay_5.jpg" alt="">
+                    </div>
+                    <div class="delivery__pay-item">
+                        <img class="delivery__pay-item-img" src="img/detail/pay_6.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer class="footer">
+        <div class="footer__main-block">
+            <div class="footer__column footer__column--big">
+                <p class="footer__description">
+                    <span class="footer__description-title">Сотбит.Оригами</span> –
+                    универсальный шаблон
+                    для создания интернет-магазинов любой тематики.
+                    Многие знакомы с принципом оригами – за основу
+                    берется квадратный лист бумаги, из которого
+                    складывается фигурка.
+                </p>
+                <ul class="footer__info-list">
+                    <li class="footer__info-item">
+                        <svg class="footer__info-icon footer__info-icon--mark" >
+                            <use xlink:href='/img/sprite.svg#icon_location_filled'/>
+                        </svg>
+                        <span class="footer__info-item-text">ул. Ленина, 15</span>
+                    </li>
+                    <li class="footer__info-item">
+                        <svg  class="footer__info-icon footer__info-icon--latter">
+                            <use xlink:href='/img/sprite.svg#icon_mail_filled'/>
+                        </svg>
+                        <a href="mailto:sales@origami.sotbit.ru"
+                            class="footer__info-item-text footer__info-item-text--link">sales@origami.sotbit.ru</a>
+                    </li>
+                    <li class="footer__info-item">
+                        <svg class="footer__info-icon footer__info-icon--phone">
+                            <use xlink:href='/img/sprite.svg#icon_phone_filled'/>
+                        </svg>
+                        <a href="tel:+74951111111" class="footer__info-item-text footer__info-item-text--link">
+                            +7 (495) 111-11-11
+                        </a>
+                    </li>
+                </ul>
+                <a href="#" class="footer__call-link">Заказать звонок</a>
+            </div>
+            <div class="footer__column footer__column--small">
+                <div class="footer__menu">
+                    <p class="footer__menu-title">Каталог</p>
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-item-link">Акции</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-item-link">Бренды</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-item-link">Новости компании</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-item-link">Блог</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-item-link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__column footer__column--small">
+                <div class="footer__menu">
+                    <p class="footer__menu-title">Помощь</p>
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-item-link">Оплата</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-item-link">Возврат товара</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-item-link">Доставка</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-item-link">Как оформить заказ</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-item-link">Правила продажи товаров</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-item-link">Публичная оферта</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-item-link">Конфиденциальность</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__column footer__column--big">
+                <div class="footer__subscribe">
+                    <p class="footer__subscribe-title">Подписаться на нас</p>
+                    <form action="#" class="footer__subscribe-form">
+                        <input class="footer__subscribe-input" type="email" placeholder="Ваш e-mail">
+                        <button class="footer__subscribe-submit" type="submit">
+                            <svg class="footer__subscribe-submit-icon">
+                                <use xlink:href='/img/sprite.svg#icon_mail'/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+                <div class="footer__social">
+                    <p class="footer__social-title">
+                        Мы в социальных сетях
+                    </p>
+                    <div class="footer__social-inner">
+                        <a href="#" class="footer__social-item footer__social-item--vk">
+                            <svg class="footer__social-icon" >
+                                <use xlink:href='/img/sprite.svg#icon_vk'/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-item footer__social-item--facebook">
+                            <svg class="footer__social-icon" >
+                                <use xlink:href='/img/sprite.svg#icon_facebook'/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-item footer__social-item--twitter">
+                            <svg class="footer__social-icon" >
+                                <use xlink:href='/img/sprite.svg#icon_twitter'/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-item footer__social-item--google">
+                            <svg class="footer__social-icon" >
+                                <use xlink:href='/img/sprite.svg#icon_google_plus'/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-item footer__social-item--telega">
+                            <svg class="footer__social-icon" >
+                                <use xlink:href='/img/sprite.svg#icon_telegram'/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-item footer__social-item--odnoclassniki">
+                            <svg class="footer__social-icon" >
+                                <use xlink:href='/img/sprite.svg#icon_odnoklassniki'/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-item footer__social-item--instagram">
+                            <svg class="footer__social-icon" >
+                                <use xlink:href='/img/sprite.svg#icon_instagram'/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-item footer__social-item--youtube">
+                            <svg class="footer__social-icon" >
+                                <use xlink:href='/img/sprite.svg#icon_youtube'/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__sub-block-wrap">
+            <div class="footer__sub-block">
+                <div class="footer__copyright">
+                    <div class="footer__copyright-img-wrap">
+                        <img src="img/logo_footer.png" class="footer__copyright-img" alt="">
+                    </div>
+                    <p class="footer__copyright-text">&#169; Сотбит: Оригами –
+                        интернет-магазин, 2019</p>
+                </div>
+                <div class="footer__pay-sistem">
+                    <div class="footer__pay-sistem-img-wrap footer__pay-sistem-img-wrap--visa">
+                        <img src="img/visa.png" class="footer__pay-sistem-img" alt="">
+                    </div>
+                    <div class="footer__pay-sistem-img-wrap footer__pay-sistem-img-wrap--mastercard">
+                        <img src="img/mastercard.png" class="footer__pay-sistem-img" alt="">
+                    </div>
+                    <div class="footer__pay-sistem-img-wrap footer__pay-sistem-img-wrap--maestro">
+                        <img src="img/maestro.png" class="footer__pay-sistem-img" alt="">
+                    </div>
+                    <div class="footer__pay-sistem-img-wrap footer__pay-sistem-img-wrap--webmoney">
+                        <img src="img/webmoney.png" class="footer__pay-sistem-img" alt="">
+                    </div>
+                    <div class="footer__pay-sistem-img-wrap footer__pay-sistem-img-wrap--paypal">
+                        <img src="img/paypal.png" class="footer__pay-sistem-img" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/assets/svg4everybody.js"></script>
+    <script src="js/detail/detail.js"></script>
+</body>
+
+</html>
